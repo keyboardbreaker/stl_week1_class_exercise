@@ -10,6 +10,10 @@ void print_words()
 {
     auto words = get_words();
     // Task: print these an alphabetical order
+    std::sort(words.begin(), words.end());
+    for(auto word : words){
+        std::cout << word <<"\n";
+    }
 }
 
 void random_numbers()
