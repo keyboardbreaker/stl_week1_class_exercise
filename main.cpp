@@ -20,7 +20,10 @@ void random_numbers()
 {
     auto numbers = get_random_numbers();
     // Task: print the minimum and maximum values
-
+    auto min = *std::min_element(numbers.begin(), numbers.end());
+    auto max = *std::max_element(numbers.begin(), numbers.end());
+    std::cout << "Minimum: " << min << "\n";
+    std::cout << "Maximum: " << max << "\n";
     // Task (harder): print the median value
 }
 
